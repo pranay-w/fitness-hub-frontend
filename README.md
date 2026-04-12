@@ -1,94 +1,79 @@
-# 🏋️ Fitness Hub
+# Fitness Hub — Frontend
 
-Fitness Hub is a multi-page fitness website created using **HTML and CSS**.
-This project focuses on clean UI design, structured layout, and real-world website sections like plans, store, and contact.
-
----
-
-## 🚀 Features
-
-* 🏠 **Home Page**
-
-  * Hero section with strong tagline
-  * Training highlights and program previews
-
-* 💪 **Plans Page**
-
-  * Membership pricing (Basic, Standard, Elite)
-  * Structured comparison of features
-
-* 🛒 **Store Page**
-
-  * Fitness products UI (dumbbells, protein, mat)
-  * Clean card-based layout
-
-* ℹ️ **About Page**
-
-  * Mission, working style, and philosophy
-  * Image + text layout design
-
-* 📞 **Contact Page**
-
-  * Contact form UI
-  * Video section for modern feel
+A multi-page fitness platform interface built with semantic HTML and CSS. Demonstrates structured UI layout, responsive design principles, and component-level thinking applied to a real-world domain.
 
 ---
 
-## 🛠️ Tech Stack
+## Overview
 
-* HTML5
-* CSS3 (Flexbox, gradients, hover effects)
+Fitness Hub is a frontend prototype for a fitness and wellness platform. It covers the core pages a production fitness web app requires — workout discovery, membership selection, and a product store — built with clean, maintainable HTML and CSS.
 
----
-
-## 🎨 UI Highlights
-
-* Fixed responsive navbar
-* Gradient dark theme
-* Hover animations and transitions
-* Card-based layout system
-* Structured multi-page navigation
+**Real-world relevance:** Frontend prototyping is a critical first phase in product development. This project demonstrates the ability to translate a product concept into a structured, navigable UI without any framework dependency.
 
 ---
 
-## 📂 Project Structure
+## Features
 
-```id="proj123"
-Fitness-Hub/
-│── index.html
-│── about.html
-│── plans.html
-│── store.html
-│── contact.html
-│── style.css
-│── assets/
+- Multi-page architecture with consistent navigation
+- Workout programs section with categorized plans
+- Membership tier comparison layout
+- Store UI with product card grid
+- Responsive layout adapting to different viewport sizes
+- Semantic HTML structure throughout
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Markup | HTML5 (semantic) |
+| Styling | CSS3 (Flexbox, Grid, custom properties) |
+| Assets | Static images |
+
+---
+
+## Screenshots
+
+![Home](./screenshots/home.png)
+![Programs](./screenshots/programs.png)
+![Membership](./screenshots/membership.png)
+![Store](./screenshots/store.png)
+![Responsive](./screenshots/responsive.png)
+
+---
+
+## Installation & Setup
+
+```bash
+git clone https://github.com/pranay-w/fitness-hub-frontend.git
+cd fitness-hub-frontend
+# Open index.html in any modern browser
 ```
 
 ---
 
-## 📌 Learning Outcomes
+## Project Structure
 
-* Building a complete multi-page website
-* Using Flexbox for layouts
-* Creating reusable UI components
-* Designing modern UI using pure CSS
-* Structuring real-world website sections
-
----
-
-## 🌐 Future Improvements
-
-* Add JavaScript for interactivity
-* Make fully responsive for mobile
-* Add backend for form handling
-* Convert into React project
-
----
-
-## 👨‍💻 Author
-
-* Pranay
+```
+fitness-hub-frontend/
+├── index.html
+├── programs.html
+├── membership.html
+├── store.html
+├── css/
+│   ├── style.css
+│   └── responsive.css
+├── assets/
+│   └── images/
+└── screenshots/
+```
 
 ---
 
-⭐ This project was created as a Semester 1 submission and improved with modern UI concepts.
+## Future Improvements
+
+- Port to React with component-driven architecture
+- Add JavaScript interactivity — membership toggle, cart counter, scroll animations
+- Integrate a CSS design system with custom properties
+- Deploy via GitHub Pages with live demo URL
