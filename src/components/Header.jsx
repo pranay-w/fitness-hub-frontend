@@ -4,6 +4,7 @@ import { navLinks } from "../data/siteData";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const dumbbellIcon = `${import.meta.env.BASE_URL}assets/dumbell-grey.svg`;
 
   return (
     <header className="site-header">
@@ -27,7 +28,7 @@ function Header() {
         </nav>
 
         <Link className="header-icon" to="/store" aria-label="Visit store">
-          <img src="/assets/dumbell-grey.svg" alt="Dumbbell icon" />
+          <img src={dumbbellIcon} alt="Dumbbell icon" />
         </Link>
 
         <button

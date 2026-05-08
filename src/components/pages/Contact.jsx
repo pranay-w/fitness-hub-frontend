@@ -11,6 +11,7 @@ const initialForm = {
 
 function Contact() {
   const [form, setForm] = useState(initialForm);
+  const contactVideo = `${import.meta.env.BASE_URL}assets/vedios/hero-bg.mp4`;
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -66,7 +67,7 @@ function Contact() {
             </form>
 
             <div className="contact-media">
-              <video src="/assets/vedios/hero-bg.mp4" autoPlay loop muted playsInline />
+              <video src={contactVideo} autoPlay loop muted playsInline />
             </div>
           </div>
 

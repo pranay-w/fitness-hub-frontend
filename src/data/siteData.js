@@ -1,3 +1,5 @@
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const navLinks = [
   { label: "Home", path: "/" },
   { label: "Plans", path: "/plans" },
@@ -30,21 +32,21 @@ export const programs = [
     level: "Beginner · 8 Weeks",
     description:
       "Three full-body training days per week to build strength, confidence, and durable movement patterns.",
-    image: "/assets/images/program-beginner.jpg"
+    image: asset("assets/images/program-beginner.jpg")
   },
   {
     title: "Strength Engine",
     level: "Intermediate · 12 Weeks",
     description:
       "Barbell-focused programming with controlled volume and steady progression for reliable strength gains.",
-    image: "/assets/images/product-dumbbells.jpg"
+    image: asset("assets/images/product-dumbbells.jpg")
   },
   {
     title: "Shred Phase",
     level: "Advanced · 6 Weeks",
     description:
       "A disciplined cut designed to maintain output and muscle while dialing in conditioning and recovery.",
-    image: "/assets/images/hero-fallback.jpg"
+    image: asset("assets/images/hero-fallback.jpg")
   }
 ];
 
@@ -53,14 +55,14 @@ export const plans = [
     name: "Basic",
     summary: "For people starting out.",
     price: "₹999/month",
-    image: "/assets/images/program-beginner.jpg",
+    image: asset("assets/images/program-beginner.jpg"),
     features: ["Gym access", "Beginner program", "Basic support"]
   },
   {
     name: "Standard",
     summary: "For consistent lifters.",
     price: "₹1499/month",
-    image: "/assets/images/hero-fallback.jpg",
+    image: asset("assets/images/hero-fallback.jpg"),
     featured: true,
     features: ["Gym + class access", "Custom plan", "Weekly check-ins"]
   },
@@ -68,7 +70,7 @@ export const plans = [
     name: "Elite",
     summary: "For serious athletes.",
     price: "₹2499/month",
-    image: "/assets/images/hero-athlete.jpg",
+    image: asset("assets/images/hero-athlete.jpg"),
     features: ["All access", "1:1 coaching", "Performance testing"]
   }
 ];
@@ -78,19 +80,19 @@ export const storeProducts = [
     name: "Dumbbells Set",
     detail: "Adjustable · Steel",
     price: "₹3,499",
-    image: "/assets/images/product-dumbbells.jpg"
+    image: asset("assets/images/product-dumbbells.jpg")
   },
   {
     name: "Whey Protein",
     detail: "1KG · Chocolate",
     price: "₹1,899",
-    image: "/assets/images/product-protein.jpg"
+    image: asset("assets/images/product-protein.jpg")
   },
   {
     name: "Workout Mat",
     detail: "Non-slip · 10mm",
     price: "₹999",
-    image: "/assets/images/product-mat.jpg"
+    image: asset("assets/images/product-mat.jpg")
   }
 ];
 
@@ -99,13 +101,13 @@ export const aboutSections = [
     title: "Our Mission",
     description:
       "We build a training environment where people can progress without distractions or gimmicks. Structure, consistency, and smart coaching lead the way.",
-    image: "/assets/images/about-hero.jpg"
+    image: asset("assets/images/about-hero.jpg")
   },
   {
     title: "How We Work",
     description:
       "Every member trains with intent. From beginner to advanced, each phase is guided by clear programming, progression, and steady support.",
-    image: "/assets/images/hero-athlete.jpg",
+    image: asset("assets/images/hero-athlete.jpg"),
     reverse: true
   }
 ];
@@ -117,8 +119,8 @@ export const contactDetails = [
 ];
 
 export const socialLinks = [
-  { href: "https://www.facebook.com/", icon: "/assets/facebook.svg", label: "Facebook" },
-  { href: "https://www.instagram.com/", icon: "/assets/instagram.svg", label: "Instagram" },
-  { href: "https://x.com/?lang=en-in", icon: "/assets/twitter.svg", label: "Twitter" },
-  { href: "https://www.youtube.com/", icon: "/assets/youtube.svg", label: "YouTube" }
+  { href: "https://www.facebook.com/", icon: asset("assets/facebook.svg"), label: "Facebook" },
+  { href: "https://www.instagram.com/", icon: asset("assets/instagram.svg"), label: "Instagram" },
+  { href: "https://x.com/?lang=en-in", icon: asset("assets/twitter.svg"), label: "Twitter" },
+  { href: "https://www.youtube.com/", icon: asset("assets/youtube.svg"), label: "YouTube" }
 ];
