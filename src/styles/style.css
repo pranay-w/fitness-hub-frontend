@@ -26,30 +26,6 @@
   --icon-background: rgba(255, 255, 255, 0.04);
 }
 
-.app-shell[data-theme="light"] {
-  --surface: rgba(255, 255, 255, 0.88);
-  --surface-solid: #ffffff;
-  --border: rgba(18, 30, 58, 0.12);
-  --border-strong: rgba(61, 102, 214, 0.32);
-  --text-main: #111827;
-  --text-soft: #4b5568;
-  --text-muted: #6f7d92;
-  --shadow: 0 16px 45px rgba(30, 41, 59, 0.12);
-  --shadow-hover: 0 24px 52px rgba(40, 79, 174, 0.14);
-  --page-background:
-    radial-gradient(circle at top, rgba(106, 152, 255, 0.2), transparent 28%),
-    linear-gradient(135deg, #f5f9ff 0%, #edf3ff 48%, #e8eefb 100%);
-  --header-background: rgba(245, 249, 255, 0.84);
-  --hero-background:
-    radial-gradient(circle at top left, rgba(77, 128, 255, 0.16), transparent 25%),
-    radial-gradient(circle at bottom right, rgba(108, 146, 255, 0.16), transparent 32%),
-    linear-gradient(135deg, #f7faff 0%, #edf3ff 42%, #e6eefb 100%);
-  --hero-overlay:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));
-  --input-background: rgba(255, 255, 255, 0.68);
-  --icon-background: rgba(255, 255, 255, 0.7);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -182,54 +158,6 @@ textarea {
   transform: translateY(-2px) scale(1.04);
   border-color: rgba(120, 155, 255, 0.55);
   box-shadow: 0 18px 36px rgba(17, 44, 116, 0.35);
-}
-
-.theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 48px;
-  padding: 0 16px 0 12px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--icon-background);
-  color: var(--text-main);
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.theme-toggle:hover {
-  transform: translateY(-2px);
-  border-color: rgba(120, 155, 255, 0.55);
-  box-shadow: 0 18px 36px rgba(17, 44, 116, 0.2);
-}
-
-.theme-toggle-track {
-  width: 42px;
-  height: 24px;
-  border-radius: 999px;
-  background: rgba(77, 128, 255, 0.2);
-  padding: 3px;
-  display: flex;
-  align-items: center;
-}
-
-.theme-toggle-thumb {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--primary-strong));
-  transform: translateX(0);
-  transition: transform 0.25s ease;
-}
-
-.app-shell[data-theme="light"] .theme-toggle-thumb {
-  transform: translateX(18px);
-}
-
-.theme-toggle-label {
-  font-size: 0.92rem;
-  font-weight: 700;
 }
 
 .menu-toggle {

@@ -110,10 +110,6 @@
     align-items: stretch;
   }
 
-  .theme-toggle-label {
-    display: none;
-  }
-
   .button {
     width: 100%;
   }
