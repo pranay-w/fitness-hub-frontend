@@ -1,0 +1,49 @@
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { navLinks } from "../data/siteData";
+
+function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header className="site-header">
+      <div className="container header-bar">
+        <Link className="brand" to="/" onClick={() => setMenuOpen(false)}>
+          <span className="brand-top">Fitness</span>
+          <span className="brand-bottom">HUB</span>
+        </Link>
+
+        <nav className={`site-nav ${menuOpen ? "is-open" : ""}`}>
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </NavLink>
+          ))}
+        </nav>
+
+        <Link className="header-icon" to="/store" aria-label="Visit store">
+          <img src="/assets/dumbell-grey.svg" alt="Dumbbell icon" />
+        </Link>
+
+        <button
+          className={`menu-toggle ${menuOpen ? "is-open" : ""}`}
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((value) => !value)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+    </header>
+  );
+}
+
+export default Header;
