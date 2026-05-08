@@ -21,7 +21,7 @@ function About() {
                 <h2>{section.title}</h2>
                 <p>{section.description}</p>
               </div>
-              <img src={section.image} alt={section.title} />
+              <img src={section.image} alt={section.title} loading="lazy" decoding="async" />
             </article>
           ))}
           <InfoPanel title="What makes us different?">

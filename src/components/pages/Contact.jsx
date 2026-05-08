@@ -67,7 +67,7 @@ function Contact() {
             </form>
 
             <div className="contact-media">
-              <video src={contactVideo} autoPlay loop muted playsInline />
+              <video src={contactVideo} autoPlay loop muted playsInline preload="metadata" />
             </div>
           </div>
 

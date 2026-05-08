@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function PlanCard({ plan }) {
   return (
     <article className={`content-card pricing-card ${plan.featured ? "featured" : ""}`}>
-      <img src={plan.image} alt={plan.name} />
+      <img src={plan.image} alt={plan.name} loading="lazy" decoding="async" />
       <div className="card-body">
         <h3>{plan.name}</h3>
         <p>{plan.summary}</p>

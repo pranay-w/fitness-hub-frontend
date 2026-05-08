@@ -7,7 +7,12 @@ function HeroSection() {
   return (
     <section className="hero-section">
       <div className="hero-overlay" />
-      <img className="hero-background" src={heroBackground} alt="Gym training background" />
+      <img
+        className="hero-background"
+        src={heroBackground}
+        alt="Gym training background"
+        fetchPriority="high"
+      />
       <div className="container hero-grid">
         <div className="hero-content">
           <p className="eyebrow">Performance gym experience</p>
@@ -40,7 +45,7 @@ function HeroSection() {
             </ul>
           </div>
           <div className="highlight-image">
-            <img src={heroAthlete} alt="Woman training in a dark gym" />
+            <img src={heroAthlete} alt="Woman training in a dark gym" loading="eager" decoding="async" />
           </div>
         </aside>
       </div>
