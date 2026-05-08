@@ -1,18 +1,11 @@
 import { Link } from "react-router-dom";
 
 function HeroSection() {
-  const heroBackground = `${import.meta.env.BASE_URL}assets/home-bg.jpg`;
   const heroAthlete = `${import.meta.env.BASE_URL}assets/images/hero-athlete.jpg`;
 
   return (
     <section className="hero-section">
       <div className="hero-overlay" />
-      <img
-        className="hero-background"
-        src={heroBackground}
-        alt="Gym training background"
-        fetchPriority="high"
-      />
       <div className="container hero-grid">
         <div className="hero-content">
           <p className="eyebrow">Performance gym experience</p>

@@ -35,6 +35,7 @@
   .header-bar {
     min-height: 80px;
     position: relative;
+    grid-template-columns: auto 1fr auto;
   }
 
   .menu-toggle {
@@ -43,8 +44,7 @@
   }
 
   .header-icon {
-    order: 2;
-    margin-left: auto;
+    margin-left: 0;
   }
 
   .site-nav {
@@ -64,6 +64,11 @@
 
   .site-nav.is-open {
     display: flex;
+  }
+
+  .header-actions {
+    justify-self: end;
+    margin-left: auto;
   }
 
   .nav-link {
@@ -103,6 +108,10 @@
   .cta-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .theme-toggle-label {
+    display: none;
   }
 
   .button {

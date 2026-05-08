@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../data/siteData";
 
-function Header() {
+function Header({ theme, onToggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const dumbbellIcon = `${import.meta.env.BASE_URL}assets/dumbell-grey.svg`;
+  const themeLabel = theme === "dark" ? "Light mode" : "Dark mode";
 
   return (
     <header className="site-header">
@@ -27,9 +28,23 @@ function Header() {
           ))}
         </nav>
 
-        <Link className="header-icon" to="/store" aria-label="Visit store">
-          <img src={dumbbellIcon} alt="Dumbbell icon" />
-        </Link>
+        <div className="header-actions">
+          <Link className="header-icon" to="/store" aria-label="Visit store">
+            <img src={dumbbellIcon} alt="Dumbbell icon" />
+          </Link>
+
+          <button
+            className="theme-toggle"
+            type="button"
+            onClick={onToggleTheme}
+            aria-label={`Switch to ${themeLabel}`}
+          >
+            <span className="theme-toggle-track">
+              <span className="theme-toggle-thumb" />
+            </span>
+            <span className="theme-toggle-label">{themeLabel}</span>
+          </button>
+        </div>
 
         <button
           className={`menu-toggle ${menuOpen ? "is-open" : ""}`}
